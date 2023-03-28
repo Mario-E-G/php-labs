@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-2">
+        <div class="row">
+            <div class="col-12">
+                <form action="welcome.php" method="POST">
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">Frist Name</label>
+                        <input type="text" class="form-control" name="first_name" id="first_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" name="address" id="address" cols="50" rows="10"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="region" class="form-label">Region</label>
+                        <select class="form-control" name="region" id="region">
+                            <option defualt>Select Country</option>
+                            <option value="egypt" defualt>Egypt</option>
+                            <option value="russia">Russia</option>
+                            <option value="USA">U.S.A</option>
+                            <option value="UK">U.K</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-radio-label">Gender</label>
+                        <div class="d-flex justify-content-around align=items-center">
+                            <div>
+                                <label for="male" class="form-radio-label">Male</label>
+                                <input type="radio" value="male" name="gender" class="form-radio-input" id="male">
+                            </div>
+                            <div>
+                                <label for="female" class="form-radio-label">Female</label>
+                                <input type="radio" class="form-radio-input" name="gender" value="female" id="female">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="gender" class="form-check-label">Skills</label>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-around align=items-center">
+                                <div>
+                                    <label for="PHP" class="form-check-label">PHP</label>
+                                    <input type="checkbox" value="PHP" name="skills[]" class="form-check-input"
+                                        id="PHP">
+                                </div>
+                                <div>
+                                    <label for="Python" class="form-check-label">Python</label>
+                                    <input type="checkbox" class="form-check-input" name="skills[]" value="Python"
+                                        id="Python">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-around align=items-center">
+                                <div>
+                                    <label for="Bash" class="form-check-label">Bash</label>
+                                    <input type="checkbox" value="Bash" name="skills[]" class="form-check-input"
+                                        id="Bash">
+                                </div>
+                                <div>
+                                    <label for="Angular" class="form-check-label">Angular</label>
+                                    <input type="checkbox" class="form-check-input" name="skills[]" value="Angular"
+                                        id="Angular">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwd" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="passwd" id="passwd">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Track" class="form-label">Track</label>
+                        <input type="text" class="form-control" readonly name="Track" value="Open Source" id="Track">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
